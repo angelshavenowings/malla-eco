@@ -34,14 +34,6 @@ body {
   color: #d81b60;
 }
 
-#main-title {
-  text-align: center;
-  font-weight: 700;
-  color: #e91e63;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
 #malla-grid {
   display: flex;
   justify-content: space-around;

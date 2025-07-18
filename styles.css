@@ -1,0 +1,131 @@
+/* styles.css */
+
+body {
+  font-family: 'Quicksand', 'Cookie', cursive, sans-serif;
+  background-color: #ffffff;
+  color: #5a3368;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: linear-gradient(to right, #fce4ec, #e1bee7);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-family: 'Cookie', cursive;
+  font-size: 2.5rem;
+  color: #d81b60;
+}
+
+#exportarPDF {
+  background-color: #ffe0f0;
+  border: 2px dashed #f8bbd0;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  color: #ba68c8;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#exportarPDF:hover {
+  background-color: #f3e5f5;
+}
+
+main {
+  padding: 2rem;
+}
+
+.nivel {
+  background-color: #f8f9fa;
+  border-left: 5px solid #ce93d8;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(174, 213, 255, 0.4);
+}
+
+.nivel h2 {
+  font-size: 1.5rem;
+  color: #7e57c2;
+  border-bottom: 2px dashed #81d4fa;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cursos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.curso {
+  background-color: #fce4ec;
+  border: 2px solid #f8bbd0;
+  border-radius: 1rem;
+  padding: 1rem;
+  min-width: 200px;
+  text-align: center;
+  font-weight: bold;
+  color: #6a1b9a;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.curso:hover {
+  transform: scale(1.03);
+}
+
+.curso.bloqueado {
+  background-color: #e0e0e0;
+  border: 2px dashed #bdbdbd;
+  color: #757575;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.electivo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.electivo-select {
+  border: 2px solid #ce93d8;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #f3e5f5;
+  color: #6a1b9a;
+}
+
+.curso.electivo {
+  background-color: #e1f5fe;
+  border: 2px solid #81d4fa;
+  color: #0277bd;
+  min-height: 40px;
+  width: 200px;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.cambiar-electivo {
+  background-color: #fff3e0;
+  border: 2px solid #ffcc80;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.cambiar-electivo:hover {
+  transform: rotate(10deg);
+  background-color: #ffe0b2;
+}

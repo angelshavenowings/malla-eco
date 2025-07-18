@@ -1,40 +1,41 @@
 /* styles.css */
 
 body {
-  font-family: 'Quicksand', 'Cookie', cursive, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
-  color: #5a3368;
+  color: #4a4a4a;
   margin: 0;
   padding: 0;
 }
 
 .header {
-  background: linear-gradient(to right, #fce4ec, #e1bee7);
-  padding: 1rem;
+  background-color: #ffeaf2;
+  padding: 1rem 2rem;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .header h1 {
   margin: 0;
-  font-family: 'Cookie', cursive;
-  font-size: 2.5rem;
-  color: #d81b60;
+  font-size: 2.2rem;
+  color: #ec407a;
+  font-weight: 600;
 }
 
 #exportarPDF {
   background-color: #ffe0f0;
-  border: 2px dashed #f8bbd0;
-  border-radius: 2rem;
-  font-size: 1.3rem;
-  color: #ba68c8;
-  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  color: #d81b60;
+  padding: 0.6rem 1.2rem;
   cursor: pointer;
   transition: background 0.3s;
+  margin-top: 0.5rem;
 }
 
 #exportarPDF:hover {
-  background-color: #f3e5f5;
+  background-color: #f8bbd0;
 }
 
 main {
@@ -42,20 +43,21 @@ main {
 }
 
 .nivel {
-  background-color: #f8f9fa;
-  border-left: 5px solid #ce93d8;
+  background-color: #fffafc;
+  border-left: 6px solid #f8bbd0;
   margin-bottom: 2rem;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(174, 213, 255, 0.4);
+  box-shadow: 0 0 8px rgba(255, 182, 193, 0.3);
 }
 
 .nivel h2 {
-  font-size: 1.5rem;
-  color: #7e57c2;
-  border-bottom: 2px dashed #81d4fa;
-  padding-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #f06292;
+  border-bottom: 2px solid #ffd1dc;
+  padding-bottom: 0.3rem;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .cursos {
@@ -65,16 +67,16 @@ main {
 }
 
 .curso {
-  background-color: #fce4ec;
+  background-color: #ffe3ed;
   border: 2px solid #f8bbd0;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: 0.8rem 1rem;
   min-width: 200px;
   text-align: center;
-  font-weight: bold;
-  color: #6a1b9a;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  font-weight: 600;
+  color: #ad1457;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
 }
 
 .curso:hover {
@@ -82,9 +84,9 @@ main {
 }
 
 .curso.bloqueado {
-  background-color: #e0e0e0;
-  border: 2px dashed #bdbdbd;
-  color: #757575;
+  background-color: #f3f3f3;
+  border: 2px dashed #cccccc;
+  color: #999;
   cursor: not-allowed;
   opacity: 0.7;
 }
@@ -93,39 +95,39 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .electivo-select {
-  border: 2px solid #ce93d8;
+  border: 2px solid #f48fb1;
   border-radius: 1rem;
   padding: 0.5rem;
-  font-size: 1rem;
-  background-color: #f3e5f5;
-  color: #6a1b9a;
+  font-size: 0.95rem;
+  background-color: #fff0f5;
+  color: #c2185b;
 }
 
 .curso.electivo {
-  background-color: #e1f5fe;
-  border: 2px solid #81d4fa;
-  color: #0277bd;
+  background-color: #e3f2fd;
+  border: 2px solid #90caf9;
+  color: #1565c0;
   min-height: 40px;
   width: 200px;
   padding: 0.5rem;
   border-radius: 1rem;
+  text-align: center;
 }
 
 .cambiar-electivo {
-  background-color: #fff3e0;
-  border: 2px solid #ffcc80;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  padding: 0.3rem 0.6rem;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
   cursor: pointer;
-  transition: transform 0.2s;
+  color: #ec407a;
+  transition: transform 0.2s ease;
 }
 
 .cambiar-electivo:hover {
-  transform: rotate(10deg);
-  background-color: #ffe0b2;
+  transform: scale(1.2);
 }
+

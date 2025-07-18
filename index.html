@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Economía PUCP 🎀</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Cookie&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <h1>🎓 Malla Interactiva - Economía PUCP 🎀</h1>
+    <button id="exportarPDF">˚.🎀༘⋆</button>
+  </div>
+
+  <main id="malla">
+    <!-- Nivel 5 -->
+    <section class="nivel" data-nivel="5">
+      <h2>Nivel 5</h2>
+      <div class="cursos">
+        <div class="curso" data-id="ECO255">ECO255 - Microeconomía 1</div>
+        <div class="curso" data-id="ECO290">ECO290 - Macroeconomía 1</div>
+        <div class="curso" data-id="MAT291">MAT291 - Matemáticas para Economistas</div>
+        <div class="curso" data-id="1ECO12">1ECO12 - Historia Económica del Perú</div>
+      </div>
+    </section>
+
+    <!-- Nivel 6 -->
+    <section class="nivel" data-nivel="6">
+      <h2>Nivel 6</h2>
+      <div class="cursos">
+        <div class="curso bloqueado" data-id="ECO263" data-prereqs="ECO255,MAT291">ECO263 - Microeconomía 2</div>
+        <div class="curso bloqueado" data-id="ECO293" data-prereqs="ECO290,MAT291">ECO293 - Macroeconomía 2</div>
+        <div class="curso" data-id="EST241">EST241 - Estadística Inferencial</div>
+
+        <!-- Electivo EOO 1 -->
+        <div class="electivo-container">
+          <select class="electivo-select">
+            <option value="">-- Elegir Electivo EOO --</option>
+            <option value="ANT308">ANT308 – Antropología Económica</option>
+            <option value="CIS205">CIS205 – Lengua y Cultura Quechua 1</option>
+            <option value="ECO224">ECO224 – Estadística Aplicada</option>
+          </select>
+          <div class="curso electivo" contenteditable="false"></div>
+          <button class="cambiar-electivo">🧁</button>
+        </div>
+
+        <!-- Electivo EOO 2 -->
+        <div class="electivo-container">
+          <select class="electivo-select">
+            <option value="">-- Elegir Electivo EOO --</option>
+            <option value="CIS303">CIS303 – Seminario de Temas en Ciencias Sociales</option>
+            <option value="ECO295">ECO295 – Economía Institucional</option>
+            <option value="ECO314">ECO314 – Economía Laboral</option>
+          </select>
+          <div class="curso electivo" contenteditable="false"></div>
+          <button class="cambiar-electivo">🧁</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="full-app.js"></script>
+</body>
+</html>

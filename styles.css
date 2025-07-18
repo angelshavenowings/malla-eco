@@ -1,81 +1,82 @@
 /* styles.css */
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
   background-color: #ffffff;
-  color: #4a4a4a;
+  color: #444;
   margin: 0;
   padding: 0;
 }
 
 .header {
-  background-color: #ffeaf2;
-  padding: 1rem 2rem;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #f3f3f3;
 }
 
 .header h1 {
   margin: 0;
   font-size: 2.2rem;
-  color: #ec407a;
-  font-weight: 600;
+  font-weight: 700;
+  color: #e91e63;
 }
 
 #exportarPDF {
-  background-color: #ffe0f0;
+  background: none;
   border: none;
-  border-radius: 1rem;
-  font-size: 1.2rem;
-  color: #d81b60;
-  padding: 0.6rem 1.2rem;
+  font-size: 1.5rem;
+  color: #ec407a;
   cursor: pointer;
-  transition: background 0.3s;
   margin-top: 0.5rem;
 }
 
 #exportarPDF:hover {
-  background-color: #f8bbd0;
+  color: #d81b60;
 }
 
-main {
-  padding: 2rem;
-}
-
-.nivel {
-  background-color: #fffafc;
-  border-left: 6px solid #f8bbd0;
-  margin-bottom: 2rem;
-  padding: 1rem 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 8px rgba(255, 182, 193, 0.3);
-}
-
-.nivel h2 {
-  font-size: 1.4rem;
-  color: #f06292;
-  border-bottom: 2px solid #ffd1dc;
-  padding-bottom: 0.3rem;
+#main-title {
+  text-align: center;
+  font-weight: 700;
+  color: #e91e63;
+  font-size: 2rem;
   margin-bottom: 1rem;
-  font-weight: 600;
 }
 
-.cursos {
+#malla-grid {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+  overflow-x: auto;
+}
+
+.nivel-columna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
+  min-width: 220px;
+}
+
+.nivel-columna h2 {
+  font-size: 1.3rem;
+  color: #ec407a;
+  border-bottom: 2px solid #f8bbd0;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .curso {
-  background-color: #ffe3ed;
-  border: 2px solid #f8bbd0;
+  background-color: #ffe6f0;
   border-radius: 1rem;
   padding: 0.8rem 1rem;
-  min-width: 200px;
   text-align: center;
   font-weight: 600;
   color: #ad1457;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  width: 100%;
+  cursor: pointer;
   transition: transform 0.2s ease;
 }
 
@@ -84,11 +85,16 @@ main {
 }
 
 .curso.bloqueado {
-  background-color: #f3f3f3;
-  border: 2px dashed #cccccc;
+  background-color: #eeeeee;
   color: #999;
   cursor: not-allowed;
-  opacity: 0.7;
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+.curso.tachado {
+  text-decoration: line-through;
+  opacity: 0.6;
 }
 
 .electivo-container {
@@ -105,6 +111,7 @@ main {
   font-size: 0.95rem;
   background-color: #fff0f5;
   color: #c2185b;
+  width: 100%;
 }
 
 .curso.electivo {
@@ -112,7 +119,7 @@ main {
   border: 2px solid #90caf9;
   color: #1565c0;
   min-height: 40px;
-  width: 200px;
+  width: 100%;
   padding: 0.5rem;
   border-radius: 1rem;
   text-align: center;
@@ -130,4 +137,3 @@ main {
 .cambiar-electivo:hover {
   transform: scale(1.2);
 }
-

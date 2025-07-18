@@ -14,49 +14,162 @@
   </div>
 
   <main id="malla-grid">
-    <!-- Nivel 5 -->
-    <div class="nivel-columna" data-nivel="5">
-      <h2>Nivel 5</h2>
-      <div class="curso" data-id="ECO255">ECO255<br>Microeconomía 1</div>
-      <div class="curso" data-id="ECO290">ECO290<br>Macroeconomía 1</div>
-      <div class="curso" data-id="MAT291">MAT291<br>Matemáticas para Economistas</div>
-      <div class="curso" data-id="1ECO12">1ECO12<br>Historia Económica del Perú</div>
+  <!-- Nivel 5 -->
+  <div class="nivel-columna" data-nivel="5">
+    <h2>Nivel 5</h2>
+    <div class="curso" data-id="ECO255">ECO255<br>Microeconomía 1</div>
+    <div class="curso" data-id="ECO290">ECO290<br>Macroeconomía 1</div>
+    <div class="curso" data-id="MAT291">MAT291<br>Matemáticas para Economistas</div>
+    <div class="curso" data-id="1ECO12">1ECO12<br>Historia Económica del Perú</div>
+  </div>
+
+  <!-- Nivel 6 -->
+  <div class="nivel-columna" data-nivel="6">
+    <h2>Nivel 6</h2>
+    <div class="curso bloqueado" data-id="ECO263" data-prereqs="ECO255,MAT291">ECO263<br>Microeconomía 2</div>
+    <div class="curso bloqueado" data-id="ECO293" data-prereqs="ECO290,MAT291">ECO293<br>Macroeconomía 2</div>
+    <div class="curso" data-id="EST241">EST241<br>Estadística Inferencial</div>
+
+    <!-- Electivo EOO -->
+    <div class="electivo-container">
+      <select class="electivo-select">
+        <option value="">-- Elegir Electivo EOO --</option>
+        <option value="ANT308">ANT308 – Antropología Económica</option>
+        <option value="CIS205">CIS205 – Lengua y Cultura Quechua 1</option>
+        <option value="ECO224">ECO224 – Estadística Aplicada</option>
+      </select>
+      <div class="curso electivo" contenteditable="false"></div>
+      <button class="cambiar-electivo">🧁</button>
     </div>
 
-    <!-- Nivel 6 -->
-    <div class="nivel-columna" data-nivel="6">
-      <h2>Nivel 6</h2>
-      <div class="curso bloqueado" data-id="ECO263" data-prereqs="ECO255,MAT291">ECO263<br>Microeconomía 2</div>
-      <div class="curso bloqueado" data-id="ECO293" data-prereqs="ECO290,MAT291">ECO293<br>Macroeconomía 2</div>
-      <div class="curso" data-id="EST241">EST241<br>Estadística Inferencial</div>
-
-      <!-- Electivo EOO 1 -->
-      <div class="electivo-container">
-        <select class="electivo-select">
-          <option value="">-- Elegir Electivo EOO --</option>
-          <option value="ANT308">ANT308 – Antropología Económica</option>
-          <option value="CIS205">CIS205 – Lengua y Cultura Quechua 1</option>
-          <option value="ECO224">ECO224 – Estadística Aplicada</option>
-        </select>
-        <div class="curso electivo" contenteditable="false"></div>
-        <button class="cambiar-electivo">🧁</button>
-      </div>
-
-      <!-- Electivo EOO 2 -->
-      <div class="electivo-container">
-        <select class="electivo-select">
-          <option value="">-- Elegir Electivo EOO --</option>
-          <option value="CIS303">CIS303 – Seminario de Temas en Ciencias Sociales</option>
-          <option value="ECO295">ECO295 – Economía Institucional</option>
-          <option value="ECO314">ECO314 – Economía Laboral</option>
-        </select>
-        <div class="curso electivo" contenteditable="false"></div>
-        <button class="cambiar-electivo">🧁</button>
-      </div>
+    <div class="electivo-container">
+      <select class="electivo-select">
+        <option value="">-- Elegir Electivo EOO --</option>
+        <option value="CIS303">CIS303 – Seminario de Temas en Ciencias Sociales</option>
+        <option value="ECO295">ECO295 – Economía Institucional</option>
+        <option value="ECO314">ECO314 – Economía Laboral</option>
+      </select>
+      <div class="curso electivo" contenteditable="false"></div>
+      <button class="cambiar-electivo">🧁</button>
     </div>
-  </main>
+  </div>
 
-  <script src="full-app.js"></script>
-</body>
-</html>
+  <!-- Nivel 7 -->
+  <div class="nivel-columna" data-nivel="7">
+    <h2>Nivel 7</h2>
+    <div class="curso bloqueado" data-id="ECO208" data-prereqs="ECO263,ECO293">ECO208<br>Economía Internacional</div>
+    <div class="curso" data-id="ECO220">ECO220<br>Historia del Pensamiento Económico</div>
+    <div class="curso bloqueado" data-id="1ECO11" data-prereqs="ECO255,ECO290,EST241">1ECO11<br>Fundamentos de Econometría</div>
+    <div class="curso bloqueado" data-id="1ECO23" data-prereqs="1ECO11">1ECO23<br>Introducción a la Economía Peruana</div>
 
+    <!-- Electivo B -->
+    <div class="electivo-container">
+      <select class="electivo-select">
+        <option value="">-- Elegir Electivo B --</option>
+        <option value="1ECO14">1ECO14 – Economía Monetaria</option>
+        <option value="1ECO18">1ECO18 – Economía Pública</option>
+        <option value="1ECO19">1ECO19 – Teoría del Crecimiento</option>
+      </select>
+      <div class="curso electivo" contenteditable="false"></div>
+      <button class="cambiar-electivo">🧁</button>
+    </div>
+  </div>
+
+  <!-- Nivel 8 -->
+  <div class="nivel-columna" data-nivel="8">
+    <h2>Nivel 8</h2>
+    <div class="curso bloqueado" data-id="1ECO20" data-prereqs="1ECO11">1ECO20<br>Seminario de Investigación</div>
+
+    <!-- Electivo EOO -->
+    <div class="electivo-container">
+      <select class="electivo-select">
+        <option value="">-- Elegir Electivo EOO --</option>
+        <option value="ECO328">ECO328 – Temas en Economía y Ciencias Sociales 1</option>
+        <option value="ECO355">ECO355 – Temas en Economía 1</option>
+        <option value="SOC337">SOC337 – Sociología Económica</option>
+      </select>
+      <div class="curso electivo" contenteditable="false"></div>
+      <button class="cambiar-electivo">🧁</button>
+    </div>
+
+    <!-- Electivo A -->
+    <div class="electivo-container">
+      <select class="electivo-select">
+        <option value="">-- Elegir Electivo A --</option>
+        <option value="1ECO24">1ECO24 – Econometría Intermedia: Macro</option>
+        <option value="1ECO25">1ECO25 – Econometría Intermedia: Micro</option>
+      </select>
+      <div class="curso electivo" contenteditable="false"></div>
+      <button class="cambiar-electivo">🧁</button>
+    </div>
+
+    <!-- Electivo B -->
+    <div class="electivo-container">
+      <select class="electivo-select">
+        <option value="">-- Elegir Electivo B --</option>
+        <option value="1ECO22">1ECO22 – Economía del Desarrollo</option>
+        <option value="1ECO16">1ECO16 – Economía Internacional 2</option>
+        <option value="1ECO15">1ECO15 – Organización Industrial</option>
+      </select>
+      <div class="curso electivo" contenteditable="false"></div>
+      <button class="cambiar-electivo">🧁</button>
+    </div>
+
+    <!-- Electivo C -->
+    <div class="electivo-container">
+      <select class="electivo-select">
+        <option value="">-- Elegir Electivo C --</option>
+        <option value="1ECO30">1ECO30 – Lab. Bases de Datos</option>
+        <option value="1ECO31">1ECO31 – Lab. STATA</option>
+      </select>
+      <div class="curso electivo" contenteditable="false"></div>
+      <button class="cambiar-electivo">🧁</button>
+    </div>
+
+    <div class="electivo-container">
+      <select class="electivo-select">
+        <option value="">-- Elegir Electivo C --</option>
+        <option value="1ECO32">1ECO32 – Lab. MATLAB</option>
+        <option value="1ECO33">1ECO33 – Lab. EVIEWS</option>
+      </select>
+      <div class="curso electivo" contenteditable="false"></div>
+      <button class="cambiar-electivo">🧁</button>
+    </div>
+  </div>
+
+  <!-- Nivel 9 -->
+  <div class="nivel-columna" data-nivel="9">
+    <h2>Nivel 9</h2>
+    <div class="curso bloqueado" data-id="1ECO47" data-prereqs="1ECO20">1ECO47<br>Seminario de Tesis 1</div>
+
+    <!-- Electivos -->
+    <div class="electivo-container">
+      <select class="electivo-select">
+        <option value="">-- Elegir Electivo EOO --</option>
+        <option value="ECO385">ECO385 – Economía de la Integración</option>
+        <option value="POL244">POL244 – Economía Política Internacional</option>
+      </select>
+      <div class="curso electivo" contenteditable="false"></div>
+      <button class="cambiar-electivo">🧁</button>
+    </div>
+
+    <!-- Puedes duplicar más electivos si deseas -->
+  </div>
+
+  <!-- Nivel 10 -->
+  <div class="nivel-columna" data-nivel="10">
+    <h2>Nivel 10</h2>
+    <div class="curso" data-id="IDM304">IDM304<br>Idiomas</div>
+    <div class="curso bloqueado" data-id="1ECO48" data-prereqs="1ECO47">1ECO48<br>Seminario de Tesis 2</div>
+
+    <!-- Electivos finales -->
+    <div class="electivo-container">
+      <select class="electivo-select">
+        <option value="">-- Elegir Electivo EB --</option>
+        <option value="1ECO13">1ECO13 – Ética y Economía</option>
+      </select>
+      <div class="curso electivo" contenteditable="false"></div>
+      <button class="cambiar-electivo">🧁</button>
+    </div>
+  </div>
+</main>
